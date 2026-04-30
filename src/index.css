@@ -19,3 +19,19 @@ body,
 body {
   font-family: 'Geist Mono', monospace;
 }
+
+@keyframes floaty {
+
+  0%,
+  100% {
+    transform: translateY(0px) translateX(0px);
+  }
+
+  50% {
+    transform: translateY(-30px) translateX(20px);
+  }
+}
+
+.animate-floaty {
+  animation: floaty 8s ease-in-out infinite;
+}

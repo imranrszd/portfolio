@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import '../index.css'
 
 function Home() {
   return (
@@ -10,7 +11,14 @@ function Home() {
       transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
       className="min-h-screen"
     >
-      <main className="flex flex-col h-screen scroll-smooth bg-(--primary-color) text-white overflow-hidden">
+      <main className="relative flex flex-col h-screen scroll-smooth bg-(--primary-color) text-white overflow-hidden">
+        {/* <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+          <div className="absolute top-10 left-10 w-72 h-72 bg-blue-400/30 rounded-full blur-3xl animate-floaty"></div>
+
+          <div className="absolute bottom-10 right-10 w-96 h-96 bg-blue-300/20 rounded-full blur-3xl animate-floaty delay-700"></div>
+
+          <div className="absolute top-1/2 left-1/2 w-80 h-80 bg-white/10 rounded-full blur-3xl animate-floaty delay-1000"></div>
+        </div> */}
         <div className="flex py-8 items-center text-xl ">
           <a href="#home" className="px-20 hover:underline">Home</a>
           <hr className="bg-white w-full" />
