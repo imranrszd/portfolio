@@ -12,7 +12,9 @@ function AnimatedRoutes() {
 
   return (
     <AnimatePresence mode="wait">
-      <SmoothFollower />
+      <div className="hidden md:block">
+        <SmoothFollower />
+      </div>
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
