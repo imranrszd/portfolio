@@ -1,6 +1,7 @@
 import SmoothFollower from './components/SmoothFollower'
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { HashRouter, Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
+
 import Home from './pages/Home'
 import About from './pages/About';
 import Projects from './pages/Projects';
@@ -24,8 +25,8 @@ function AnimatedRoutes() {
 
 export default function App() {
   return (
-    <BrowserRouter basename="/portfolio">
+    <HashRouter>
       <AnimatedRoutes />
-    </BrowserRouter>
+    </HashRouter>
   );
 }

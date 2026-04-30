@@ -6,5 +6,5 @@ import react from '@vitejs/plugin-react-swc'
 export default defineConfig({
   plugins: [
     tailwindcss(), react()],
-  base: '/portfolio/', // MUST match your repository name exactly
+  base: '/portfolio/',
 })
