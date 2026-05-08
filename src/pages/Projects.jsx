@@ -8,12 +8,14 @@ function Projects() {
 
   const projects = [
     {
+      id: "parcel-management",
       title: "Parcel Management System",
       tech: "JavaScript, Node.js, Tailwind, PostgreSQL",
       year: 2026,
       type: "development",
     },
     {
+      id: "qylexgames",
       title: "QylexGames",
       tech: "JavaScript, React, Tailwind, PostgreSQL",
       year: 2026,
@@ -77,17 +79,19 @@ function Projects() {
               </span>
             </div> */}
             {filteredProjects.map((project, index) => (
-              <div
-                key={index}
-                className="pb-2 p-6 border-b shadow-lg hover:bg-white hover:text-black transition-colors duration-300 select-none cursor-pointer"
-              >
-                <p className="text-sm md:text-md mb-2">
-                  {project.tech} - {project.year}
-                </p>
-                <h2 className="text-3xl md:text-5xl font-medium">
-                  {project.title}
-                </h2>
-              </div>
+              <Link to={`/projects/${project.id}`} key={project.id}>
+                <div
+                  key={index}
+                  className="pb-2 p-6 border-b shadow-lg hover:bg-white hover:text-black transition-colors duration-300 select-none cursor-pointer"
+                >
+                  <p className="text-sm md:text-md mb-2">
+                    {project.tech} - {project.year}
+                  </p>
+                  <h2 className="text-3xl md:text-5xl font-medium">
+                    {project.title}
+                  </h2>
+                </div>
+              </Link>
             ))}
 
           </div>
