@@ -24,7 +24,7 @@ function About() {
           <div className=" flex-1 flex py-5 px-15 md:p-15 flex-col-reverse md:flex-row md:items-center justify-between">
             <div className="flex-1 md:px-10 ">
               <h4 className="text-xl md:text-2xl font-medium mb-5 italic">
-                MY NAME IS IMRAN, - A JUNIOR DEVELOPER
+                MY NAME IS IMRAN - A JUNIOR DEVELOPER
               </h4>
               <h1 className="text-2xl md:text-3xl font-bold mb-5">
                 OVER THE YEAR
@@ -33,23 +33,26 @@ function About() {
                 With diploma in Computer Science and Bachelor Degree in Intelligence System, I have gain a useful amount of knowledge in developing a program. It has been fun learning it and hoping that I could keep learning about it.
                 <br />
                 <br />
-                I also have done an internship at Julytech Sdn Bhd developing multiple module for their POS system and In this internship I have gain much experience about OOP and getting pretty good at programming in flutter. I have also learnt that communication and teamwork are a key to developed a program.
+                I also have done an internship at Julytech Sdn Bhd developing multiple module for their POS system and in this internship I have gain much experience about OOP and getting pretty good at programming in flutter. I have also learnt that communication and teamwork are a key to developed a program.
                 <br />
                 <br />
-                In my spare time, I try to learn as much as I could about programming and have created many personal project of my own.
+                During my degree, I have also learned many areas of Artificial Intelligence, from understanding how systems can make decisions on their own to developing projects that apply AI concepts in real-world situations.
+                <br />
+                <br />Now in my spare time, I try to learn as much as I can about software development, artificial intelligence, and data-related technologies while creating personal projects to improve my skills.
               </p>
               <h1 className="text-2xl md:text-3xl font-bold mb-5">
                 Experience
               </h1>
               <p className="md:text-lg mb-8">
-                - Internship at Julytech Sdn Bhd (2024) <br />
-                - Degree in Intelligence System at Universiti Teknologi MARA (Present)
+                - Degree in Intelligence System at Universiti Teknologi MARA (Present)<br />
+                - Freelance / Part-time Web Developer at Qylex Solution (2025)<br />
+                - Internship at Julytech Sdn Bhd (2024)
               </p>
               <h1 className="text-2xl md:text-3xl font-bold mb-5">
                 SKILLS
               </h1>
               <p className="md:text-lg mb-8">
-                Web and App Development, UI/UX Design, Data Analysis, Machine Learning, Deep Learning, Data Visualization, Version Control (Git), Problem Solving.
+                Web Development, Mobile App Development, UI/UX Design, Backend Development, Database Management, Artificial Intelligence, Machine Learning, Deep Learning, Data Analysis, Data Visualization, Version Control, and Problem Solving.
               </p>
             </div>
 
