@@ -29,7 +29,7 @@ function Home() {
           </div>
           <div className=" flex-1 flex py-10 px-15 md:p-15 flex-col md:flex-row md:items-center justify-between">
             <div className="flex-1 md:px-10 md:py-20 mt-auto">
-              <p className=" md:text-lg">Welcome to My Portfolio</p>
+              <p className=" md:text-lg">Welcome to</p>
               <h1 className="text-4xl md:text-5xl font-bold ">
                 IMRAN's PORTFOLIO
               </h1>
