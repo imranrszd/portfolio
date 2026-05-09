@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import { projects } from "../data/projects";
+import BackgroundGlow from "../components/BackgroundGlow";
 
 function Projects() {
   const [tab, setTab] = useState("development");
@@ -19,16 +20,18 @@ function Projects() {
       transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
       className="min-h-screen"
     >
-      <main className="flex flex-col h-screen scroll-smooth bg-(--primary-color) text-white">
-        {/* navbar */}
-        <div className="flex py-8 items-center text-xl ">
-          <div className="px-10 md:px-20 "><Link to="/" className="hover:underline">Home</Link><span>/Projects</span></div>
-          <hr className="bg-white w-full" />
-        </div>
+      <main className="relative flex flex-col min-h-screen scroll-smooth text-white overflow-x-hidden">
+        <BackgroundGlow />
+        <div className="relative z-10 flex flex-col min-h-screen">
+          {/* navbar */}
+          <div className="flex py-8 items-center text-xl ">
+            <div className="px-10 md:px-20 "><Link to="/" className="hover:underline">Home</Link><span>/Projects</span></div>
+            <hr className="bg-white w-full" />
+          </div>
 
 
-        <div className="flex-1 flex pl-5 md:pl-15 flex-col py-10">
-          {/* <div className="flex items-center gap-4 px-6 mb-6">
+          <div className="flex-1 flex pl-5 md:pl-15 flex-col py-10">
+            {/* <div className="flex items-center gap-4 px-6 mb-6">
               <span
                 onClick={() => setTab("development")}
                 className={`cursor-pointer ${tab === "development" ? "underline" : "opacity-60 hover:opacity-100"}`}
@@ -43,22 +46,23 @@ function Projects() {
                 Design
               </span>
             </div> */}
-          {filteredProjects.map((project, index) => (
-            <Link to={`/projects/${project.id}`} key={project.id}>
-              <div
-                key={index}
-                className="pb-2 p-6 border-b shadow-lg hover:bg-white hover:text-black transition-colors duration-300 select-none cursor-pointer"
-              >
-                <p className="text-sm md:text-md mb-2">
-                  {project.tech} - {project.year}
-                </p>
-                <h2 className="text-3xl md:text-5xl font-medium">
-                  {project.title}
-                </h2>
-              </div>
-            </Link>
-          ))}
+            {filteredProjects.map((project, index) => (
+              <Link to={`/projects/${project.id}`} key={project.id}>
+                <div
+                  key={index}
+                  className="pb-2 p-6 border-b shadow-lg hover:bg-white hover:text-black transition-colors duration-300 select-none cursor-pointer"
+                >
+                  <p className="text-sm md:text-md mb-2">
+                    {project.tech} - {project.year}
+                  </p>
+                  <h2 className="text-3xl md:text-5xl font-medium">
+                    {project.title}
+                  </h2>
+                </div>
+              </Link>
+            ))}
 
+          </div>
         </div>
       </main ></motion.div>
   );
