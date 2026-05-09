@@ -42,7 +42,7 @@ function About() {
                 Experience
               </h1>
               <p className="md:text-lg mb-8">
-                - Internship at Julytech Sdn Bhd (2023) <br />
+                - Internship at Julytech Sdn Bhd (2024) <br />
                 - Degree in Intelligence System at Universiti Teknologi MARA (Present)
               </p>
               <h1 className="text-2xl md:text-3xl font-bold mb-5">

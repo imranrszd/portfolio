@@ -22,8 +22,30 @@ export const projects = [
     text3:
       "The project also includes parcel search, reporting, and customer-facing parcel checking features. These features make it easier for staff and users to track parcels, reduce confusion, and improve daily operation flow.",
   }, {
+    id: "covid-dashboard",
+    title: "COVID-19 Mortality Dashboard",
+    tech: "Power BI, Excel, Data Visualization, CRISP-DM",
+    year: 2025,
+    type: "development",
+    image1: "images/data1.png",
+    image2: "images/data2.png",
+
+    description:
+      "An interactive data analytics dashboard built to visualize and analyze COVID-19 mortality trends in Malaysia using Power BI.",
+
+    text1:
+      "This project analyzes COVID-19 death data in Malaysia by focusing on key factors such as age, gender, vaccination status, comorbidities, citizenship, BID status, and state distribution. The goal is to make complex public health data easier to understand through interactive visualizations.",
+
+    text2:
+      "The dashboard was developed using Power BI with charts, filters, slicers, and visual storytelling techniques. The project followed the CRISP-DM methodology, starting from business understanding and data preparation to exploratory analysis and dashboard development.",
+
+    text3:
+      "The analysis highlights important patterns such as the peak of COVID-19 deaths in 2021, higher mortality among elderly groups, state-level differences, and the role of vaccination in reducing death trends over time. This project demonstrates skills in data cleaning, exploratory data analysis, dashboard design, and insight communication."
+  },
+  {
     id: "qylex-solution",
     title: "Qylex Solution",
+    link: "https://qylexsolution.com",
     tech: "React, Tailwind, Web3Forms",
     year: 2026,
     type: "development",

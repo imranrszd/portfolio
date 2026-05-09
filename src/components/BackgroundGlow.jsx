@@ -1,4 +1,3 @@
-// src/components/BackgroundGlow.jsx
 import { motion } from "framer-motion";
 
 function BackgroundGlow() {

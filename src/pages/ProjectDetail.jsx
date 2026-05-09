@@ -1,5 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { projects } from "../data/projects";
+import { ExternalLink } from "lucide-react";
 import BackgroundGlow from "../components/BackgroundGlow";
 
 function ProjectDetail() {
@@ -23,7 +24,21 @@ function ProjectDetail() {
           <div className="flex md:gap-2 flex-col md:flex-row">
             <div className="flex-1 p-3 md:p-6">
               <p className="text-base mt-2">{project.tech} - {project.year}</p>
-              <h1 className="text-4xl">{project.title}</h1>
+              {project.link ? (
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-5 text-4xl font-semibold hover:underline transition-colors"
+                >
+                  <span>{project.title}</span>
+                  <ExternalLink
+                    size={28}
+                    className="opacity-70 group-hover:opacity-100 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all"
+                  /></a>
+              ) : (
+                <h1 className="text-4xl font-semibold">{project.title}</h1>
+              )}
 
               <p className="my-10 md:max-w-xl">{project.description}</p>
             </div>
