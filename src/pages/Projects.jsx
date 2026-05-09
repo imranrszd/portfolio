@@ -22,12 +22,12 @@ function Projects() {
       <main className="flex flex-col h-screen scroll-smooth bg-(--primary-color) text-white">
         {/* navbar */}
         <div className="flex py-8 items-center text-xl ">
-          <div className="px-20 "><Link to="/" className="hover:underline">Home</Link><span>/Projects</span></div>
+          <div className="px-10 md:px-20 "><Link to="/" className="hover:underline">Home</Link><span>/Projects</span></div>
           <hr className="bg-white w-full" />
         </div>
 
 
-        <div className="flex-1 flex pl-15 flex-col py-10">
+        <div className="flex-1 flex pl-5 md:pl-15 flex-col py-10">
           {/* <div className="flex items-center gap-4 px-6 mb-6">
               <span
                 onClick={() => setTab("development")}

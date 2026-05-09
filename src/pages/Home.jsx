@@ -20,7 +20,7 @@ function Home() {
           <div className="absolute top-1/2 left-1/2 w-80 h-80 bg-white/10 rounded-full blur-3xl animate-floaty delay-1000"></div>
         </div> */}
         <div className="flex py-8 items-center text-xl ">
-          <a href="#home" className="px-20 hover:underline">Home</a>
+          <a href="#home" className="px-10 md:px-20  hover:underline">Home</a>
           <hr className="bg-white w-full" />
         </div>
         <div className=" flex-1 flex py-10 px-15 md:p-15 flex-col md:flex-row md:items-center justify-between">

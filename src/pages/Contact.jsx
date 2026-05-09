@@ -14,7 +14,7 @@ function Contact() {
       <main className="flex flex-col h-screen scroll-smooth bg-(--primary-color) text-white">
         {/* navbar */}
         <div className="flex py-8 items-center text-xl ">
-          <div className="px-20 "><Link to="/" className="hover:underline">Home</Link><span>/Contact</span></div>
+          <div className="px-10 md:px-20 "><Link to="/" className="hover:underline">Home</Link><span>/Contact</span></div>
           <hr className="bg-white w-full" />
         </div>
 
