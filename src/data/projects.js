@@ -104,6 +104,26 @@ export const projects = [
 
     text3:
       "Points earned from completed tasks are used to fill a reward bar. Once the reward bar is full, users receive a medal, which can then be used as a personal reward system to treat themselves for their progress."
+  }, {
+    id: "qylexgames",
+    title: "QylexGames",
+    tech: "JavaScript, React, Tailwind, PostgreSQL",
+    year: 2026,
+    type: "development",
+    image1: "images/qg1.png",
+    image2: "images/qg2.png",
+
+    description:
+      "A web-based gaming top-up platform that allows users to purchase in-game currency and digital game services through a clean, responsive, and user-friendly interface.",
+
+    text1:
+      "QylexGames is designed as an online platform for game top-ups, where users can browse different games, choose the available packages, and place orders for in-game currency or digital services. The platform focuses on making the purchasing process simple, organized, and easy to understand, especially for users who want a fast and smooth top-up experience.",
+
+    text2:
+      "The system supports multiple product types such as direct top-up, login-based services, and game-related service packages. Each product can have different package options, pricing, and required user details depending on the type of service. This allows the platform to handle various game top-up workflows while keeping the checkout process clear for customers.",
+
+    text3:
+      "QylexGames also includes an admin-focused structure for managing products, prices, packages, and supplier-related information. This makes it easier to update game items, adjust pricing, organize product variations, and prepare the platform for future improvements such as automated provider integration, order tracking, and better sales management.",
   },
   {
     id: "nutriscan",
@@ -126,19 +146,5 @@ export const projects = [
     text3:
       "NutriScan displays the assessment result with details such as risk score, confidence level, related symptoms, and recommended action. This helps users identify possible malnutrition signs earlier and decide whether urgent referral or further checking is needed."
   },
-  // {
-  //   id: "qylexgames",
-  //   title: "QylexGames",
-  //   tech: "JavaScript, React, Tailwind, PostgreSQL",
-  //   year: 2026,
-  //   type: "development",
-  //   image1: "images/qylex.png",
-  //   description: "Gaming platform...",
-  //   text1:
-  //     "A gaming top-up platform with product listings, checkout flow, and admin management features.",
-  //   text2:
-  //     "The platform supports multiple product types, payment methods, package pricing, and supplier mapping.",
-  //   text3:
-  //     "Users can browse games, purchase top-ups, and manage their accounts seamlessly.",
-  // },
+
 ];

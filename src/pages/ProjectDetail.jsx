@@ -1,10 +1,15 @@
 import { useParams, Link } from "react-router-dom";
+import { useEffect } from "react";
 import { projects } from "../data/projects";
 import { ExternalLink } from "lucide-react";
 import BackgroundGlow from "../components/BackgroundGlow";
 
 function ProjectDetail() {
   const { id } = useParams();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [id]);
 
   const project = projects.find((p) => p.id === id);
 
@@ -43,7 +48,8 @@ function ProjectDetail() {
               <p className="my-10 md:max-w-xl">{project.description}</p>
             </div>
             <div className="flex-1">
-              <img className="rounded-md" src={project.image1} alt={project.title} />
+              <img className="rounded-md" src={project.image1} alt={project.title}
+                loading="eager" />
             </div>
           </div>
           <div className="flex  px-3 md:px-0 ">
@@ -51,7 +57,7 @@ function ProjectDetail() {
           </div>
           <div className="flex md:gap-2 flex-col md:flex-row">
             <div className="flex-1 ">
-              <img className="rounded-md" src={project.image2} alt={project.title} />
+              <img className="rounded-md" src={project.image2} alt={project.title} loading="lazy" />
             </div>
             <div className="flex-1 ">
               <p className="text-lg px-3 pt-10 md:p-10">{project.text2}</p>
