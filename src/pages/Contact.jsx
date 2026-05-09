@@ -31,7 +31,7 @@ function Contact() {
             </p><p className="md:text-lg mb-2">
               Email: imranrszd@gmail.com
             </p><p className="md:text-lg">
-              Social: <span className="hover:underline"><a href="https://www.linkedin.com/in/imranrszd/" target="_blank" rel="noopener noreferrer">LinkedIn</a></span> - <span className="hover:underline"><a href="https://github.com/imranrszd" target="_blank" rel="noopener noreferrer">Github</a></span> - <span className="hover:underline"><a href="https://threads.net/imranrszd" target="_blank" rel="noopener noreferrer">Threads</a></span>
+              Social: <span className="hover:underline"><a href="https://www.linkedin.com/in/imran-rszd//" target="_blank" rel="noopener noreferrer">LinkedIn</a></span> - <span className="hover:underline"><a href="https://github.com/imranrszd" target="_blank" rel="noopener noreferrer">Github</a></span>
             </p>
           </div>
 

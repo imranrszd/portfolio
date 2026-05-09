@@ -21,6 +21,26 @@ export const projects = [
 
     text3:
       "The project also includes parcel search, reporting, and customer-facing parcel checking features. These features make it easier for staff and users to track parcels, reduce confusion, and improve daily operation flow.",
+  }, {
+    id: "qylex-solution",
+    title: "Qylex Solution",
+    tech: "React, Tailwind, Web3Forms",
+    year: 2026,
+    type: "development",
+    image1: "images/qs1.png",
+    image2: "images/qs2.png",
+
+    description:
+      "A modern company website built to present Qylex Solution’s digital services, project portfolio, and client contact channel in a clean and professional way.",
+
+    text1:
+      "Qylex Solution is designed as a business-focused website that introduces the company’s services, including custom software development, automation systems, web development, and digital solutions. The website helps visitors quickly understand what the company offers and how it can support their business needs.",
+
+    text2:
+      "The website was developed using React and Tailwind CSS to create a responsive, clean, and modern user interface. The layout focuses on clear service presentation, smooth navigation, and a professional visual style that reflects the company’s technology-driven identity.",
+
+    text3:
+      "The contact page is integrated with Web3Forms, allowing users to submit enquiries directly through the website without requiring a custom backend. This makes the website practical for lead generation, client communication, and future business opportunities.",
   },
   {
     id: "evergreen-home",
