@@ -17,7 +17,7 @@ export const projects = [
       "Parcel Management System is designed for parcel hubs that handle large volumes of daily parcels. It helps staff record incoming parcels, organize them by rack, and manage parcel status in a more structured way.",
 
     text2:
-      "The system supports barcode-based parcel registration, rack allocation, parcel handout tracking, and staff activity records. This reduces manual work and helps the hub process parcels more quickly.",
+      "The system supports parcel registration, rack allocation, parcel handout tracking, and staff activity records. This reduces manual work and helps the hub process parcels more quickly.",
 
     text3:
       "The project also includes parcel search, reporting, and customer-facing parcel checking features. These features make it easier for staff and users to track parcels, reduce confusion, and improve daily operation flow.",
