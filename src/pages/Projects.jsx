@@ -1,16 +1,22 @@
-import profileImg from "../assets/profile.jpg";
 import { Link } from "react-router-dom";
-import { AnimatePresence, motion } from "framer-motion";
-import { useState } from "react";
+import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 import { projects } from "../data/projects";
 import BackgroundGlow from "../components/BackgroundGlow";
 
 function Projects() {
-  const [tab, setTab] = useState("development");
+  const [tab, setTab] = useState(() => {
+    return localStorage.getItem("projectTab") || "all";
+  });
 
-  const filteredProjects = projects.filter(
-    (p) => p.type === tab
-  );
+  useEffect(() => {
+    localStorage.setItem("projectTab", tab);
+  }, [tab]);
+
+  const filteredProjects =
+    tab === "all"
+      ? projects
+      : projects.filter((p) => p.type === tab);
 
   return (
     <motion.div
@@ -22,51 +28,74 @@ function Projects() {
     >
       <main className="relative flex flex-col min-h-screen scroll-smooth text-white overflow-x-hidden">
         <BackgroundGlow />
+
         <div className="relative z-10 flex flex-col min-h-screen">
           {/* navbar */}
-          <div className="flex py-8 items-center text-xl ">
-            <div className="px-10 md:px-20 "><Link to="/" className="hover:underline">Home</Link><span>/Projects</span></div>
+          <div className="flex py-8 items-center text-xl">
+            <div className="px-10 md:px-20">
+              <Link to="/" className="hover:underline">Home</Link>
+              <span>/Projects</span>
+            </div>
             <hr className="bg-white w-full" />
           </div>
 
+          <div className="flex-1 flex pl-5 md:pl-15 flex-col pt-4 pb-10">
 
-          <div className="flex-1 flex pl-5 md:pl-15 flex-col py-10">
-            {/* <div className="flex items-center gap-4 px-6 mb-6">
-              <span
+            <div className="flex items-center gap-4 px-6 mb-6">
+              <button
+                onClick={() => setTab("all")}
+                className={`cursor-pointer ${tab === "all"
+                  ? "underline"
+                  : "opacity-60 hover:opacity-100"
+                  }`}
+              >
+                All
+              </button>
+
+              <span>-</span>
+
+              <button
                 onClick={() => setTab("development")}
-                className={`cursor-pointer ${tab === "development" ? "underline" : "opacity-60 hover:opacity-100"}`}
+                className={`cursor-pointer ${tab === "development"
+                  ? "underline"
+                  : "opacity-60 hover:opacity-100"
+                  }`}
               >
                 Development
-              </span>
-              -
-              <span
-                onClick={() => setTab("design")}
-                className={`cursor-pointer ${tab === "design" ? "underline" : "opacity-60 hover:opacity-100"}`}
+              </button>
+
+              <span>-</span>
+
+              <button
+                onClick={() => setTab("analysis")}
+                className={`cursor-pointer ${tab === "analysis"
+                  ? "underline"
+                  : "opacity-60 hover:opacity-100"
+                  }`}
               >
-                Design
-              </span>
-            </div> */}
-            {filteredProjects.map((project, index) => (
+                Analysis
+              </button>
+            </div>
+
+            {/* projects */}
+            {filteredProjects.map((project) => (
               <Link to={`/projects/${project.id}`} key={project.id}>
-                <div
-                  key={index}
-                  className="pb-2 p-6 border-b shadow-lg hover:bg-white hover:text-black transition-colors duration-300 select-none cursor-pointer"
-                >
+                <div className="pb-2 p-6 border-b shadow-lg hover:bg-white hover:text-black transition-colors duration-300 select-none cursor-pointer">
                   <p className="text-sm md:text-md mb-2">
                     {project.tech} - {project.year}
                   </p>
+
                   <h2 className="text-3xl md:text-5xl font-medium">
                     {project.title}
                   </h2>
                 </div>
               </Link>
             ))}
-
           </div>
         </div>
-      </main ></motion.div>
+      </main>
+    </motion.div>
   );
-
 }
 
 export default Projects;

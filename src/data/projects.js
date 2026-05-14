@@ -22,11 +22,34 @@ export const projects = [
     text3:
       "The project also includes parcel search, reporting, and customer-facing parcel checking features. These features make it easier for staff and users to track parcels, reduce confusion, and improve daily operation flow.",
   }, {
+    id: "sentiment-analysis",
+    title: "Sentiment Analysis",
+    tech: "Python, Excel, RapidMiner",
+    year: 2025,
+    type: "analysis",
+    image1: "images/sentiment1.png",
+    image2: "images/sentiment2.png",
+    image3: "images/sentiment3.png",
+
+    description:
+      "A data scraping and sentiment analysis project that collects Goodreads reviews for The Metamorphosis and processes them into a structured dataset for text classification experiments.",
+
+    text1:
+      "This project was developed to collect and organize online book review data from Goodreads, focusing on reviews for The Metamorphosis. The project used web scraping techniques to extract review text, rating stars, and related review information from dynamically loaded web pages. Playwright was used to handle interactive page elements and loading behavior, while BeautifulSoup and Pandas were used to parse, clean, and store the extracted data into a structured dataset.",
+
+    text2:
+      "After the raw reviews were collected, the project focused on preparing the text data for sentiment classification. The processing workflow included removing duplicate records, selecting important attributes, mapping rating scores into sentiment labels, and cleaning the review text. ",
+    text3:
+      "The text preprocessing stage also applied lowercase conversion, tokenization, English stopword removal, token length filtering, stemming, and TF-IDF weighting to convert the review text into usable machine learning features. The final dataset was used to train and evaluate sentiment classification models using RapidMiner. ",
+    text4:
+      "The project applied feature selection using Information Gain and tested machine learning models through split validation and cross validation. This project demonstrates practical skills in web scraping, data cleaning, text preprocessing, feature engineering, and machine learning-based sentiment analysis using real-world review data.",
+  },
+  {
     id: "covid-dashboard",
     title: "COVID-19 Mortality Dashboard",
-    tech: "Power BI, Excel, Data Visualization, CRISP-DM",
+    tech: "Power BI, Excel, Data Visualization",
     year: 2025,
-    type: "development",
+    type: "analysis",
     image1: "images/data1.png",
     image2: "images/data2.png",
 

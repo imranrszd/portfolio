@@ -55,7 +55,7 @@ function ProjectDetail() {
           <div className="flex  px-3 md:px-0 ">
             <p>{project.text1}</p>
           </div>
-          <div className="flex md:gap-2 flex-col md:flex-row">
+          <div className="flex items-center md:gap-2 flex-col md:flex-row">
             <div className="flex-1 ">
               <img className="rounded-md" src={project.image2} alt={project.title} loading="lazy" />
             </div>
@@ -66,6 +66,24 @@ function ProjectDetail() {
           <div className="flex md:py-10 px-3 md:px-0">
             <p>{project.text3}</p>
           </div>
+          {project.image3 && (
+            <div className="flex items-center md:gap-2 flex-col md:flex-row">
+              {project.text4 && (
+                <div className="flex-1">
+                  <p className="text-lg px-3 pt-10 md:p-10">{project.text4}</p>
+                </div>
+              )}
+              <div className="flex-1">
+                <img
+                  className="rounded-md"
+                  src={project.image3}
+                  alt={`${project.title} extra screenshot`}
+                  loading="lazy"
+                />
+              </div>
+
+            </div>
+          )}
         </div>
       </div>
     </main >
