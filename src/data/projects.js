@@ -1,70 +1,7 @@
 import { text } from "framer-motion/client";
 
 export const projects = [
-  {
-    id: "parcel-management",
-    title: "Parcel Management System",
-    tech: "JavaScript, Node.js, Tailwind, PostgreSQL",
-    year: 2026,
-    type: "development",
-    image1: "images/pms1.png",
-    image2: "images/pms2.png",
 
-    description:
-      "A web-based system built to help parcel hubs manage daily parcel operations faster and more efficiently.",
-
-    text1:
-      "Parcel Management System is designed for parcel hubs that handle large volumes of daily parcels. It helps staff record incoming parcels, organize them by rack, and manage parcel status in a more structured way.",
-
-    text2:
-      "The system supports parcel registration, rack allocation, parcel handout tracking, and staff activity records. This reduces manual work and helps the hub process parcels more quickly.",
-
-    text3:
-      "The project also includes parcel search, reporting, and customer-facing parcel checking features. These features make it easier for staff and users to track parcels, reduce confusion, and improve daily operation flow.",
-  }, {
-    id: "sentiment-analysis",
-    title: "Sentiment Analysis",
-    tech: "Python, Excel, RapidMiner",
-    year: 2025,
-    type: "analysis",
-    image1: "images/sentiment1.png",
-    image2: "images/sentiment2.png",
-    image3: "images/sentiment3.png",
-
-    description:
-      "A data scraping and sentiment analysis project that collects Goodreads reviews for The Metamorphosis and processes them into a structured dataset for text classification experiments.",
-
-    text1:
-      "This project was developed to collect and organize online book review data from Goodreads, focusing on reviews for The Metamorphosis. The project used web scraping techniques to extract review text, rating stars, and related review information from dynamically loaded web pages. Playwright was used to handle interactive page elements and loading behavior, while BeautifulSoup and Pandas were used to parse, clean, and store the extracted data into a structured dataset.",
-
-    text2:
-      "After the raw reviews were collected, the project focused on preparing the text data for sentiment classification. The processing workflow included removing duplicate records, selecting important attributes, mapping rating scores into sentiment labels, and cleaning the review text. ",
-    text3:
-      "The text preprocessing stage also applied lowercase conversion, tokenization, English stopword removal, token length filtering, stemming, and TF-IDF weighting to convert the review text into usable machine learning features. The final dataset was used to train and evaluate sentiment classification models using RapidMiner. ",
-    text4:
-      "The project applied feature selection using Information Gain and tested machine learning models through split validation and cross validation. This project demonstrates practical skills in web scraping, data cleaning, text preprocessing, feature engineering, and machine learning-based sentiment analysis using real-world review data.",
-  },
-  {
-    id: "covid-dashboard",
-    title: "COVID-19 Mortality Dashboard",
-    tech: "Power BI, Excel, Data Visualization",
-    year: 2025,
-    type: "analysis",
-    image1: "images/data1.png",
-    image2: "images/data2.png",
-
-    description:
-      "An interactive data analytics dashboard built to visualize and analyze COVID-19 mortality trends in Malaysia using Power BI.",
-
-    text1:
-      "This project analyzes COVID-19 death data in Malaysia by focusing on key factors such as age, gender, vaccination status, comorbidities, citizenship, BID status, and state distribution. The goal is to make complex public health data easier to understand through interactive visualizations.",
-
-    text2:
-      "The dashboard was developed using Power BI with charts, filters, slicers, and visual storytelling techniques. The project followed the CRISP-DM methodology, starting from business understanding and data preparation to exploratory analysis and dashboard development.",
-
-    text3:
-      "The analysis highlights important patterns such as the peak of COVID-19 deaths in 2021, higher mortality among elderly groups, state-level differences, and the role of vaccination in reducing death trends over time. This project demonstrates skills in data cleaning, exploratory data analysis, dashboard design, and insight communication."
-  },
   {
     id: "qylex-solution",
     title: "Qylex Solution",
@@ -76,16 +13,63 @@ export const projects = [
     image2: "images/qs2.png",
 
     description:
-      "A modern company website built to present Qylex Solution’s digital services, project portfolio, and client contact channel in a clean and professional way.",
+      "A modern company website built to present Qylex Solution’s services, projects, and contact channel through a clean and professional interface.",
 
     text1:
-      "Qylex Solution is designed as a business-focused website that introduces the company’s services, including custom software development, automation systems, web development, and digital solutions. The website helps visitors quickly understand what the company offers and how it can support their business needs.",
+      "Qylex Solution was designed as a business-focused website that introduces the company’s digital services, including web development, custom systems, automation solutions, and technology consulting. The goal was to help visitors quickly understand what the company does and how it can support business operations.",
 
     text2:
-      "The website was developed using React and Tailwind CSS to create a responsive, clean, and modern user interface. The layout focuses on clear service presentation, smooth navigation, and a professional visual style that reflects the company’s technology-driven identity.",
+      "The website includes service sections, project highlights, company messaging, and a contact form. The layout focuses on clear navigation, strong visual presentation, and a professional structure that makes the company look more credible to potential clients.",
 
     text3:
-      "The contact page is integrated with Web3Forms, allowing users to submit enquiries directly through the website without requiring a custom backend. This makes the website practical for lead generation, client communication, and future business opportunities.",
+      "The project was developed using React and Tailwind CSS for a responsive frontend, with Web3Forms integrated into the contact page so users can submit enquiries without requiring a custom backend. The design also uses reusable components to keep the layout easier to maintain.",
+
+    text4:
+      "This project improved my ability to build client-facing websites that are not only visually clean, but also useful for business communication, lead generation, and presenting a company’s digital identity.",
+  },
+  {
+    id: "sentiment-analysis",
+    title: "Sentiment Analysis",
+    tech: "Python, Excel, RapidMiner",
+    year: 2025,
+    type: "analysis",
+  },
+  {
+    id: "covid-dashboard",
+    title: "COVID-19 Mortality Dashboard",
+    tech: "Power BI, Excel, Data Visualization",
+    year: 2025,
+    type: "analysis",
+  },
+  {
+    id: "telco-churn-dashboard",
+    title: "Telco Customer Churn Dashboard",
+    tech: "Tableau, Excel, Data Visualization",
+    year: 2025,
+    type: "analysis",
+  }, {
+    id: "parcel-management",
+    title: "Parcel Management System",
+    tech: "JavaScript, Node.js, Tailwind, PostgreSQL",
+    year: 2026,
+    type: "development",
+    image1: "images/pms1.png",
+    image2: "images/pms2.png",
+
+    description:
+      "A web-based parcel hub management system built to help staff register, organize, search, and hand out parcels more efficiently.",
+
+    text1:
+      "Parcel Management System was developed for parcel hubs that manage a high volume of parcels every day. The system helps staff record incoming parcels, assign them to racks, update parcel status, and keep the overall parcel flow more organized.",
+
+    text2:
+      "The system includes parcel registration, rack allocation, parcel search, handout tracking, customer parcel checking, reporting, and staff activity records. These features help reduce manual checking and make daily parcel handling faster and easier for both staff and customers.",
+
+    text3:
+      "The project was built using JavaScript, Node.js, Tailwind CSS, and PostgreSQL. The backend manages parcel records, staff actions, rack data, and status updates, while the frontend focuses on a simple interface that supports fast searching and smooth daily operation.",
+
+    text4:
+      "This project strengthened my experience in building real operational systems, especially in designing database-driven workflows, improving process efficiency, and creating tools that solve practical problems for parcel hub operations.",
   },
   {
     id: "evergreen-home",
@@ -97,17 +81,21 @@ export const projects = [
     image2: "images/evghm2.png",
 
     description:
-      "A mobile-based smart watering system built to help users monitor and control plant watering more easily using IoT.",
+      "A mobile-based smart watering system that connects a Flutter app with an IoT device to monitor plant conditions and control watering remotely.",
 
     text1:
-      "Evergreen Home is designed for users who want to manage plant watering in a smarter and more convenient way. The system connects a Flutter mobile app with an Arduino-based IoT device to monitor plant conditions and control watering remotely.",
+      "Evergreen Home was created to make plant care easier by allowing users to monitor soil and environmental conditions through a mobile app. The system connects the app with an Arduino-based IoT device, giving users more control over watering without needing to check the plant manually all the time.",
 
     text2:
-      "The app allows users to switch between manual mode and auto mode, water the plant directly from the app, and monitor important plant data such as soil moisture percentage, temperature, and humidity.",
+      "The app supports manual watering, automatic watering mode, soil moisture monitoring, temperature and humidity display, soil dampness status, and last-watered tracking. These features help users understand the plant’s current condition and water it more consistently.",
 
     text3:
-      "The system also shows the last watered time and soil dampness level, helping users understand the plant’s current condition. These features make plant care easier, reduce the need for manual checking, and support more consistent watering."
-  }, {
+      "The mobile app was built using Flutter and Dart, while the IoT side uses Arduino-based hardware and sensors to collect plant condition data. The system combines mobile interface design with hardware communication to create a simple smart-home style watering solution.",
+
+    text4:
+      "This project gave me hands-on experience with mobile-IoT integration, sensor-based logic, real-time condition monitoring, and building a user interface that connects software with physical hardware.",
+  },
+  {
     id: "medaltask",
     title: "MedalTask",
     tech: "Flutter, Dart, Firebase",
@@ -117,17 +105,21 @@ export const projects = [
     image2: "images/mt2.png",
 
     description:
-      "A mobile task management app that motivates users to complete tasks through points, streaks, rewards, and medals.",
+      "A gamified mobile task management app that motivates users to complete tasks through points, streaks, medals, and personal rewards.",
 
     text1:
-      "MedalTask is designed to help users stay consistent with their daily tasks by turning task completion into a reward-based experience. Users can create and track tasks, then earn points whenever they complete them.",
+      "MedalTask was designed to help users stay consistent with their daily tasks by turning task completion into a reward-based experience. Instead of being a normal to-do list, the app encourages users to build habits through progress, points, and medals.",
 
     text2:
-      "The app includes a streak system that gives bonus points based on the user’s completion streak. The longer the streak, the more rewarding each completed task becomes, encouraging users to build consistent habits.",
+      "The app includes task creation, task completion tracking, points, streak bonuses, reward progress, and medal collection. The streak system gives extra points when users complete tasks consistently, making the app feel more motivating over time.",
 
     text3:
-      "Points earned from completed tasks are used to fill a reward bar. Once the reward bar is full, users receive a medal, which can then be used as a personal reward system to treat themselves for their progress."
-  }, {
+      "The project was built using Flutter and Dart, with Firebase used to store and manage task-related data. The app structure focuses on user interaction, task state updates, reward calculation, and a simple mobile interface for daily use.",
+
+    text4:
+      "This project helped me understand how gamification can be used in productivity apps, especially by combining task management with motivation systems such as streaks, points, and rewards.",
+  },
+  {
     id: "qylexgames",
     title: "QylexGames",
     tech: "JavaScript, React, Tailwind, PostgreSQL",
@@ -137,16 +129,19 @@ export const projects = [
     image2: "images/qg2.png",
 
     description:
-      "A web-based gaming top-up platform that allows users to purchase in-game currency and digital game services through a clean, responsive, and user-friendly interface.",
+      "A web-based gaming top-up platform that allows users to browse games, choose packages, and place orders for in-game currency or digital game services.",
 
     text1:
-      "QylexGames is designed as an online platform for game top-ups, where users can browse different games, choose the available packages, and place orders for in-game currency or digital services. The platform focuses on making the purchasing process simple, organized, and easy to understand, especially for users who want a fast and smooth top-up experience.",
+      "QylexGames was designed as an online platform for game top-ups and digital game services. Users can browse available games, select top-up packages, enter the required account details, and place orders through a clean and responsive interface.",
 
     text2:
-      "The system supports multiple product types such as direct top-up, login-based services, and game-related service packages. Each product can have different package options, pricing, and required user details depending on the type of service. This allows the platform to handle various game top-up workflows while keeping the checkout process clear for customers.",
+      "The platform supports different product types, including direct top-up, login-based services, and game service packages. Each product can have its own pricing, package options, required customer details, payment method, and supplier-related setup, allowing the platform to handle different top-up workflows.",
 
     text3:
-      "QylexGames also includes an admin-focused structure for managing products, prices, packages, and supplier-related information. This makes it easier to update game items, adjust pricing, organize product variations, and prepare the platform for future improvements such as automated provider integration, order tracking, and better sales management.",
+      "The project was built using JavaScript, React, Tailwind CSS, and PostgreSQL. The system structure supports product management, package pricing, supplier mapping, and order-related data, making it easier to maintain and expand as more games or services are added.",
+
+    text4:
+      "This project improved my experience in building e-commerce style flows, especially product listing, package selection, checkout logic, database planning, and admin-focused management features.",
   },
   {
     id: "nutriscan",
@@ -158,16 +153,19 @@ export const projects = [
     image2: "images/ns2.png",
 
     description:
-      "A web-based malnutrition screening system that uses decision-tree logic to assess children aged 5 years and below.",
+      "A web-based malnutrition screening tool that uses decision-tree logic to assess possible malnutrition risk for children aged 5 years and below.",
 
     text1:
-      "NutriScan is designed to help users perform an early malnutrition assessment for children under 5 years old. The system collects key child information such as age, gender, weight, height, MUAC, and visible symptoms through a guided web form.",
+      "NutriScan was created as an early screening tool for child malnutrition. The system collects information such as age, gender, weight, height, MUAC, and visible symptoms through a guided form, then uses the input to support a basic assessment.",
 
     text2:
-      "The system uses decision-tree logic, a rule-based approach that follows structured conditions similar to how a computer makes decisions. Based on the entered data and symptoms, it analyzes the child’s condition and classifies the possible malnutrition type.",
+      "The system provides a structured assessment flow, symptom selection, malnutrition classification, risk score, confidence level, and recommended action. This helps users better understand whether a child may need further checking or urgent referral.",
 
     text3:
-      "NutriScan displays the assessment result with details such as risk score, confidence level, related symptoms, and recommended action. This helps users identify possible malnutrition signs earlier and decide whether urgent referral or further checking is needed."
+      "The project was built using HTML, CSS, and JavaScript. The assessment logic uses a decision-tree style approach, where the system follows rule-based conditions to classify the possible malnutrition type based on the user’s input.",
+
+    text4:
+      "This project helped me apply decision-based logic in a real health-related use case, while also improving my understanding of form handling, conditional rules, and user-friendly result presentation.",
   },
 
 ];

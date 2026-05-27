@@ -7,6 +7,7 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import ProjectDetail from "./pages/ProjectDetail";
+import CaseStudyDetail from "./pages/CaseStudyDetail";
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -22,6 +23,7 @@ function AnimatedRoutes() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/projects/:id" element={<ProjectDetail />} />
+        <Route path="/case-study/:id" element={<CaseStudyDetail />} />
       </Routes>
     </AnimatePresence>
   );

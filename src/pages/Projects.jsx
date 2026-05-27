@@ -79,7 +79,14 @@ function Projects() {
 
             {/* projects */}
             {filteredProjects.map((project) => (
-              <Link to={`/projects/${project.id}`} key={project.id}>
+              <Link
+                key={project.id}
+                to={
+                  project.type === "analysis"
+                    ? `/case-study/${project.id}`
+                    : `/projects/${project.id}`
+                }
+              >
                 <div className="pb-2 p-6 border-b shadow-lg hover:bg-white hover:text-black transition-colors duration-300 select-none cursor-pointer">
                   <p className="text-sm md:text-md mb-2">
                     {project.tech} - {project.year}
