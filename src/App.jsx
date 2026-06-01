@@ -8,6 +8,7 @@ import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import ProjectDetail from "./pages/ProjectDetail";
 import CaseStudyDetail from "./pages/CaseStudyDetail";
+import Analytics from "./components/Analytics";
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -17,6 +18,7 @@ function AnimatedRoutes() {
       <div className="hidden md:block">
         <SmoothFollower />
       </div>
+
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -32,6 +34,7 @@ function AnimatedRoutes() {
 export default function App() {
   return (
     <HashRouter>
+      <Analytics />
       <AnimatedRoutes />
     </HashRouter>
   );
