@@ -1,7 +1,31 @@
 import { text } from "framer-motion/client";
 
 export const projects = [
+  {
+    id: "minigift-by-juheraa",
+    title: "minigift by Juheraa",
+    link: "https://minigiftbyjuheraa.com/",
+    tech: "React, Tailwind, Node.js, PostgreSQL",
+    year: 2026,
+    type: "development",
+    image1: "images/minigift1.png",
+    image2: "images/minigift2.png",
 
+    description:
+      "A custom gift e-commerce website built for minigift by Juheraa, focused on showcasing handmade gifts, product collections, cart flow, and customer order tracking through a clean and cute storefront interface.",
+
+    text1:
+      "minigift by Juheraa is a custom gift website designed to help customers browse handmade products, choose designs, and place personalized gift orders online. The site focuses on making the shopping experience feel simple, warm, and visually aligned with the brand’s soft handmade identity.",
+
+    text2:
+      "The frontend includes a landing page, product collection section, gallery, product detail pages, cart interface, and order tracking flow. The layout was designed to make products easy to explore, with clear call-to-action buttons, category filtering, product cards, and a responsive interface for both desktop and mobile users.",
+
+    text3:
+      "I developed the frontend using React and Tailwind CSS, focusing on responsive layouts, reusable UI components, product display sections, cart-related interfaces, and a clean visual structure. The system connects with backend product data so items, pricing, images, and product details can be managed more dynamically instead of being fully hardcoded.",
+
+    text4:
+      "This project improved my experience in building real client-facing e-commerce interfaces, especially in product presentation, responsive UI design, cart flow, brand-focused visuals, and creating a storefront that feels both functional and appealing to customers.",
+  },
   {
     id: "qylex-solution",
     title: "Qylex Solution",

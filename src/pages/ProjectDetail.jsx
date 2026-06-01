@@ -85,7 +85,7 @@ function ProjectDetail() {
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group inline-flex items-center gap-4 text-4xl md:text-6xl font-bold leading-tight hover:underline"
+                  className="group inline-flex items-center gap-4 text-4xl md:text-5xl font-bold leading-tight hover:underline"
                 >
                   <span>{project.title}</span>
                   <ExternalLink
@@ -94,7 +94,7 @@ function ProjectDetail() {
                   />
                 </a>
               ) : (
-                <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+                <h1 className="text-4xl md:text-5xl font-bold leading-tight">
                   {project.title}
                 </h1>
               )}
