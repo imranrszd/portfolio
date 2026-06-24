@@ -1,4 +1,5 @@
 export const caseStudies = [
+
   {
     id: "sentiment-analysis",
     title: "Sentiment Analysis",
@@ -72,7 +73,81 @@ export const caseStudies = [
       github: "",
       dashboard: "",
     },
-  }, {
+  },
+  {
+    id: "ga-feature-selection",
+    title: "GA-Based Feature Selection for Heart Disease",
+    subtitle: "Optimizing Clinical Attribute Selection Using Genetic Algorithms",
+    tech: "Python, Genetic Algorithm, scikit-learn",
+    year: 2025,
+    type: "analysis",
+
+    image1: "",
+    image2: "",
+
+    description:
+      "An optimization-based machine learning project that uses a Genetic Algorithm to select the most relevant clinical features from the UCI Cleveland Heart Disease dataset, improving classification accuracy while reducing the number of diagnostic tests required.",
+
+    problem:
+      "Modern heart disease datasets contain many patient attributes, but using all features in a classification model often leads to overfitting, high computational cost, and reliance on unnecessary medical tests. This project addresses the need to identify a minimal but effective subset of clinical features that can classify heart disease with high accuracy, making diagnostic models more practical and cost-efficient.",
+
+    dataset:
+      "The project used the UCI Cleveland Heart Disease dataset, a benchmark medical dataset collected at the Cleveland Clinic Foundation. It contains 13 clinically relevant features such as chest pain type, resting blood pressure, serum cholesterol, maximum heart rate, and exercise-induced angina, along with a binary target label indicating the presence or absence of heart disease.",
+
+    methodology:
+      "The project implemented a wrapper-based Genetic Algorithm feature selection approach. Each individual in the population is a binary chromosome representing a subset of features. A Random Forest classifier evaluates each subset by measuring its classification accuracy, which serves as the fitness function. The GA evolves the population over 20 generations using tournament selection, single-point crossover, and bit-flip mutation to find the optimal feature subset.",
+
+    cleaning: [
+      "Loaded the Cleveland Heart Disease dataset and separated features from the target condition label.",
+      "Used binary chromosome encoding where each gene represents whether a feature is selected (1) or excluded (0).",
+      "Initialized a population of 30 random binary individuals across 13 features.",
+      "Applied tournament selection with a size of 3 to pick parents based on fitness scores.",
+      "Used single-point crossover at 95% rate and bit-flip mutation at 1% rate to evolve feature subsets.",
+      "Evaluated each individual using a Random Forest classifier with a 70/30 train-test split and accuracy as the fitness metric.",
+    ],
+
+    questions: [
+      "Which clinical features are most relevant for classifying heart disease?",
+      "Can a Genetic Algorithm find a feature subset that matches or exceeds full-feature classification accuracy?",
+      "How does the GA population evolve in terms of accuracy across 20 generations?",
+      "How many features are needed in the optimal subset compared to the full 13-feature set?",
+      "Is it possible to reduce unnecessary medical tests while maintaining diagnostic reliability?",
+    ],
+
+    insights: [
+      "The Genetic Algorithm successfully identified a reduced subset of features that maintained high classification accuracy, demonstrating that not all 13 features are equally important for heart disease prediction.",
+      "The convergence plot showed steady improvement in accuracy across generations, confirming that the GA was effectively exploring and exploiting the feature search space.",
+      "Features related to chest pain type, maximum heart rate, and exercise-induced angina consistently appeared in the best-performing subsets, aligning with established clinical knowledge about heart disease risk factors.",
+      "Using a Random Forest classifier as the fitness evaluator provided reliable accuracy estimates that guided the GA toward medically meaningful feature combinations.",
+      "The project demonstrates that evolutionary optimization can reduce the number of required diagnostic tests while preserving model performance, making it more practical for real clinical settings.",
+    ],
+
+    recommendations: [
+      "Apply the selected feature subset to other classification models such as SVM, KNN, or Logistic Regression to validate generalizability beyond Random Forest.",
+      "Increase the number of generations and population size to explore whether a more optimal feature subset can be found with longer evolution.",
+      "Incorporate a multi-objective fitness function that balances both classification accuracy and the number of selected features to further reduce diagnostic test requirements.",
+      "Test the approach on other medical datasets to evaluate whether the GA-based wrapper method generalizes across different health classification problems.",
+      "Consider combining GA with statistical feature ranking techniques such as ANOVA to improve initial population quality and speed up convergence.",
+    ],
+
+    toolsUsed: [
+      "Python",
+      "NumPy",
+      "Pandas",
+      "scikit-learn",
+      "Matplotlib",
+      "Genetic Algorithm",
+      "Random Forest",
+      "Feature selection",
+      "Google Colab",
+    ],
+
+    links: {
+      github: "https://colab.research.google.com/drive/1gAPaHUaXRV3njRVQb99TT_TcuOIgAoNh?usp=sharing",
+      dashboard: "",
+    },
+  },
+  {
     id: "covid-dashboard",
     title: "COVID-19 Mortality Dashboard",
     subtitle: "Malaysia COVID-19 Death Trends & Public Health Risk Analysis",

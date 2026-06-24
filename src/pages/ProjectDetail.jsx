@@ -106,7 +106,7 @@ function ProjectDetail() {
               <div className="flex flex-wrap gap-4">
                 <Link
                   to="/projects"
-                  className="inline-flex items-center gap-2 rounded-full border border-white/20 px-5 py-3 hover:bg-white/10 transition"
+                  className="inline-flex items-center gap-2 rounded-full px-5 py-3 hover:underline transition"
                 >
                   <ArrowLeft size={18} />
                   Back to Projects
@@ -117,7 +117,7 @@ function ProjectDetail() {
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 rounded-full border border-white/20 px-5 py-3 hover:bg-white/10 transition"
+                    className="inline-flex items-center gap-2 rounded-full px-5 py-3 hover:underline transition"
                   >
                     Visit Project
                     <ExternalLink size={18} />

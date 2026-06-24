@@ -58,6 +58,13 @@ export const projects = [
     year: 2025,
     type: "analysis",
   },
+  // {
+  //   id: "ga-feature-selection",
+  //   title: "GA-Based Feature Selection for Heart Disease",
+  //   tech: "Python, Genetic Algorithm, scikit-learn",
+  //   year: 2025,
+  //   type: "analysis",
+  // },
   {
     id: "covid-dashboard",
     title: "COVID-19 Mortality Dashboard",
